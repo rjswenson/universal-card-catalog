@@ -1,6 +1,6 @@
-# war_room_viewer
+## universal_card_catalog
 
-A basic card catalog.  The goal for this sucker is to assist in a closed source game project I'm working on.  While the game might be closed source, this card catalog will be universal.
+A basic card catalog for any gaming system.  The goal for this sucker is to assist in a closed source game project I'm working on.  While the game might be closed source, this card catalog will be universal.  Works with D&D, RTS games, and any other system with monsters, units, or heroes.
 
 ====
 
