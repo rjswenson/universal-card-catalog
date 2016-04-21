@@ -8,7 +8,11 @@
 module.exports = {
 
   attributes: {
-
+    name:         {type: 'string', required: true},
+    key:          {type: 'string', required: true},
+    home_planet:  {type: 'string', required: true},
+    description:  {type: 'string', required: false},
+    units:        { collection: 'Unit' },
   }
 };
 
