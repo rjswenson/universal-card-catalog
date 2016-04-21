@@ -8,6 +8,11 @@
 module.exports = {
 
   attributes: {
+    name:   { type: 'string', required: true },
+    key:    { type: 'string' },
+    year:   { type: 'number' },
+    tags:   { type: 'array' },
+    units:  { collection: 'Unit' },
 
   }
 };
