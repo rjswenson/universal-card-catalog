@@ -15,9 +15,7 @@ module.exports = {
     pop_cost:         { type: 'number', default: null, required: true },
     rank:             { type: 'string', enum: ['paragon', 'basic'] },
 
-    resource_1:       { type: 'string', default: null, required: true }, // minerals
-    resource_2:       { type: 'string', default: null, required: true }, // gas
-    resource_3:       { type: 'string', default: null, required: true }, // special?
+    resources:        { type: 'array', default: [], required: true }, // minerals
 
     hitpoints:        { type: 'float', default: null, required: true }, //, type: Float
     shield:           { type: 'float', default: null, required: true }, // #, type: Float
@@ -28,8 +26,7 @@ module.exports = {
     a_attack:         { type: 'string', default: null, required: true },
     a_attack_dps:     { type: 'float', default: null, required: true }, // #, type: Float
     attack_cd:        { type: 'string', default: null, required: true },
-    attack_mod_1:     { type: 'string', default: null, required: true },
-    attack_mod_2:     { type: 'string', default: null, required: true },
+    attack_mod:       { type: 'array', default: [], required: true },
     ground_attack_range: { type: 'float', default: null, required: true }, // type: Float
     air_attack_range: { type: 'float', default: null, required: true }, // type: Float
 
