@@ -8,9 +8,9 @@
 module.exports = {
 
   attributes: {
-    name:   { type: 'string', required: true },
+    name:   { type: 'string', required: true, unique: true },
     key:    { type: 'string' },
-    year:   { type: 'number' },
+    year:   { type: 'integer' },
     tags:   { type: 'array' },
     units:  { collection: 'Unit' },
 

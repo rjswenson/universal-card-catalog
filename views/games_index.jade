@@ -1,0 +1,11 @@
+extends default.jade
+
+block title
+  title Game List
+
+block body
+  div.page-header
+    h1 Games
+  // games-list is an angular directive - implemented as our own 'faked' html tag
+  games-list()
+

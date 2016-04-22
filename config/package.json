@@ -1,0 +1,4 @@
+{
+  "main": "build.js",
+  "browser": "browser.js"
+}
