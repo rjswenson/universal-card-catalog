@@ -1,0 +1,9 @@
+extends ./default.jade
+
+block head
+  script(src='/js/index.js')
+
+block body
+  h1 Welcome
+  section(layout='row', flex='100', layout-margin)
+    games-list(flex)

@@ -1,0 +1,12 @@
+md-list(layout='row', layout-margin, layout-padding, layout-align='center stretch')
+  md-subheader.md-accent(ng-if='!games || games.length <= 0')
+    h2 [No Games.]
+  md-button(ng-click='createGame()')
+    md-icon(style='font-size: 2.5em;') note_add
+    md-tooltip Create Game
+
+h2 Games List
+md-list(layout='column', layout-margin, layout-padding, layout-align='center stretch')
+  md-list-item.md-2-line(ng-repeat="game in games", ng-click='selectGame(game)')
+    h3 {{game.name}}
+    h5 Year: {{game.year}}
